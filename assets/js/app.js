@@ -1,4 +1,11 @@
 class App {
+
+    static DOMAIN_SERVER = 'http://localhost:3300';
+    static API_SERVER = 'http://localhost:3300';
+
+    static API_CUSTOMER = this.API_SERVER + '/customers';
+    static API_DEPOSIT = this.API_SERVER + '/deposits';
+
     static showDeleteConfirmDialog() {
         return Swal.fire({
             icon: 'warning',
@@ -40,10 +47,11 @@ class Customer {
     }
 }
 
-$(function() {
-    $(".num-space").number(true, 0, ',', ' ');
-    $(".num-point").number(true, 0, ',', '.');
-    $(".num-comma").number(true, 0, ',', ',');
 
-    $('[data-toggle="tooltip"]').tooltip();
-});
+// $(function () {
+//     $(".num-space").number(true, 0, ',', ' ');
+//     $(".num-point").number(true, 0, ',', '.');
+//     $(".num-comma").number(true, 0, ',', ',');
+
+//     $('[data-toggle="tooltip"]').tooltip();
+// });
